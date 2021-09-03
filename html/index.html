@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colima</title>
+    <link rel="icon" href="/img/block.svg" type="image/icon type">
+    <link href="/css/style.css" rel="stylesheet">
+    
+</head>
+<body class="bg-gray-900">
+    <div style="scroll-behavior: smooth;">
+        <header style="background-image: url(/img/y1.jpg);background-repeat: no-repeat; background-size: 100% 900px;">
+            <nav class=" justify-between" >
+                <ul>
+                    <span class=" inline-flex m-4 text-gray-300 text-5xl">Colima</span>
+                    <img class="float-right bg-white m-8 p-5 md:hidden" id="burger" src="https://img.icons8.com/ios-glyphs/30/000000/menu--v1.png"/>
+                    <div id="nav" class="float-right m-4 hidden md:inline-flex text-gray-300"  >
+                    <li class="p-4 cursor-pointer"><a href="#about">About</a></li>
+                    <li class="p-4 cursor-pointer"><a>Our Instructors</a></li>
+                    <li class="p-4 cursor-pointer"><a>Classes</a></li>
+                    <li class="p-4 cursor-pointer">Location</li>
+                    <li class="p-4 cursor-pointer"><a href="#blog">Blog</a></li>
+                    <li class="p-4 cursor-pointer text-xl bg-gray-500 text-white rounded"><a>Book a class</a></li>
+                    </div>
+                </ul>
+            </nav>
+            <div class=" text-gray-200 md:text-5xl mt-56 p-6 leading-relaxed font-bold">
+                Taking care of your<br> mind, body and soul.
+            </div>
+            <div class="text-gray-200 md:text-3xl md:mt-14 p-6 md:leading-relaxed">
+                Familiarize yourself with our studio<br> and course offering by signing up for a complimentary<br> drop-in class now.
+            </div>
+            <button class="text-gray-200 p-5 m-8 underline  cursor-pointer text-4xl bg-gray-600 rounded bg-opacity-50">Book a class</button>
+        </header>
+        <div class="p-10">
+            <span class="text-white font-bold text-5xl">Upcoming Classes</span>
+        </div>
+        <div class="md:grid md:grid-cols-2">
+            <div id="yoga" class="text-white text-3xl ml-12 m-5 h-96 text-center pt-44 font-bold" style="background-image: url(/img/y2.jpg); background-repeat: no-repeat;background-size: 90% 100%;">
+                Yoga Aerobics
+            </div>
+            <div id="training" class=" text-white font-bold text-3xl m-5 text-center object-center ml-12 h-96 pt-44" style="background-repeat: no-repeat;background-image: url(/img/y3.jpeg); background-size: 90% 100%;" >
+                Instructor Training
+            </div>
+            <div class="pt-20 text-white text-2xl font-bold ml-12">
+                Besides our regular schedule, we also<br> frequently host visiting teachers and <br>speakers.
+                <div class="bg-gray-300 w-44 p-4 cursor-pointer rounded  m-11 ml-0">view more</div>
+            </div>
+        </div>
+    </div>
+    <section id="blog" class="md:grid md:grid-cols-3 bg-gray-400 text-xl bg-cover text-white p-5 font-semibold leading-normal">
+        <div class="md:col-span-2 p-5 m-11">
+            With an emphasis on breathing techniques and meditation, we promote thoughtful and reflexive yoga to promote both physical and mental well-being.
+        </div>
+        <div class="col-span-1 p-5 m-11 text-lg">
+            Learn more about our studio and philosophy around yoga.<br><br>
+            <button class="bg-gray-200 text-gray-600 rounded p-3">Learn More</button>
+        </div>
+    </section>
+    <section class=" text-center " style="background-image: url(/img/y4.jpg);background-size:100% 600px;background-repeat: no-repeat;height: 500px;">
+        <h3 class="text-white md:text-5xl pt-20">Subscribe to Our Newsletter</h3>
+        <h6 class="text-white text-base md:h-24 pt-9">Sign up to receive news and updates.</h6>
+        <form>
+            <input class="p-4 m-4 pr-10 pl-10 text-gray-400" type="text" name="fName" value="First Name">
+            <input class="p-4 m-4 pr-10 pl-10 text-gray-400" type="text" name="lName" value="Last Name">
+            <input class="p-4 m-4 pr-10 pl-10 text-gray-400" type="text" name="email" value="Email">
+            <button class="p-4 pr-8 pl-8 md:m-4 bg-gray-500 text-white">Sign Up</button>
+        </form>
+    </section>
+    <section class="md:grid md:grid-cols-4 bg-white leading-normal" id="about">
+        <div class=" md:col-span-1 m-5 pt-6 text-3xl font-semibold">Colima</div>
+        <div class="md:col-span-1 m-5 text-gray-400">123 Demo Street<br>
+            Lake Tahoe, CA<br>
+            (555) 555-5555</div>
+            <div class="md:col-span-1 underline m-5 text-gray-400">
+                <a class=" cursor-pointer">About</a><br>
+                <a class=" cursor-pointer">Location</a><br>
+                <a class=" cursor-pointer">Classes</a><br>
+                <a class=" cursor-pointer">Book a Class</a>
+            </div>
+            <div>
+                <a class=" cursor-pointer"><img src="/img/facebook.svg" class=" h-5 w-5 m-6"></a>
+                <a class=" cursor-pointer"><img src="/img/instagram.svg" class=" h-5 w-5 m-6"></a>
+            </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
